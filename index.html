@@ -53,10 +53,10 @@ tr:hover td{background:rgba(59,130,246,.04)}
 </div>
 <div class="kr-label">ファネル効率</div>
 <div class="kr">
-    <div class="kpi"><div class="kl">着座単価</div><div class="v">¥0</div><div class="kd pos">▼ 100.0% vs先月</div></div>
-    <div class="kpi"><div class="kl">着座率</div><div class="v">0%</div><div class="kd neg">▼ 100.0% vs先月</div></div>
-    <div class="kpi"><div class="kl">着座CVR</div><div class="v">0%</div><div class="kd neg">▼ 100.0% vs先月</div></div>
-    <div class="kpi"><div class="kl">LINE→商談率</div><div class="v">0.0%</div><div class="kd neg">▼ 100.0% vs先月</div></div>
+    <div class="kpi"><div class="kl">着座単価</div><div class="v">¥66,479</div><div class="kd pos">▼ 59.2% vs先月</div></div>
+    <div class="kpi"><div class="kl">着座率</div><div class="v">100.0%</div><div class="kd pos">▲ 449.5% vs先月</div></div>
+    <div class="kpi"><div class="kl">着座CVR</div><div class="v">0.0%</div><div class="kd neg">▼ 100.0% vs先月</div></div>
+    <div class="kpi"><div class="kl">LINE→商談率</div><div class="v">10.0%</div><div class="kd neg">▼ 9.9% vs先月</div></div>
 </div>
 
 <!-- LINE登録 & CPL -->
@@ -129,7 +129,7 @@ tr:hover td{background:rgba(59,130,246,.04)}
 <div class="cd" style="margin-bottom:18px;overflow-x:auto">
     <table>
         <thead><tr><th>月</th><th>配信額</th><th>LINE UU</th><th>CPL(LINE)</th><th>LINE→商談</th><th>着座</th><th>着座単価</th><th>着座率</th><th>ROAS</th></tr></thead>
-        <tbody><tr><td>2025-12</td><td>¥145,701</td><td>244</td><td>¥597 </td><td>0.8%</td><td>0</td><td>¥0 </td><td>0.0%</td><td class="">0%</td></tr><tr><td>2026-01</td><td>¥316,116</td><td>205</td><td>¥1,542 <span class="md neg">▲158%</span></td><td>6.3%</td><td>1</td><td>¥316,116 </td><td>7.7%</td><td class="">0%</td></tr><tr><td>2026-02</td><td>¥574,402</td><td>182</td><td>¥3,156 <span class="md neg">▲105%</span></td><td>12.6%</td><td>10</td><td>¥57,440 <span class="md pos">▼82%</span></td><td>43.5%</td><td class="pos">122%</td></tr><tr><td>2026-03</td><td>¥650,980</td><td>198</td><td>¥3,288 <span class="md neg">▲4%</span></td><td>11.1%</td><td>4</td><td>¥162,745 <span class="md neg">▲183%</span></td><td>18.2%</td><td class="pos">244%</td></tr><tr><td>2026-04</td><td>¥66,479</td><td>10</td><td>¥6,648 <span class="md neg">▲102%</span></td><td>0.0%</td><td>0</td><td>¥0 <span class="md pos">▼100%</span></td><td>0%</td><td class="">0%</td></tr></tbody>
+        <tbody><tr><td>2025-12</td><td>¥145,701</td><td>244</td><td>¥597 </td><td>0.8%</td><td>0</td><td>¥0 </td><td>0.0%</td><td class="">0%</td></tr><tr><td>2026-01</td><td>¥316,116</td><td>205</td><td>¥1,542 <span class="md neg">▲158%</span></td><td>6.3%</td><td>1</td><td>¥316,116 </td><td>7.7%</td><td class="">0%</td></tr><tr><td>2026-02</td><td>¥574,402</td><td>182</td><td>¥3,156 <span class="md neg">▲105%</span></td><td>12.6%</td><td>10</td><td>¥57,440 <span class="md pos">▼82%</span></td><td>43.5%</td><td class="pos">122%</td></tr><tr><td>2026-03</td><td>¥650,980</td><td>198</td><td>¥3,288 <span class="md neg">▲4%</span></td><td>11.1%</td><td>4</td><td>¥162,745 <span class="md neg">▲183%</span></td><td>18.2%</td><td class="pos">244%</td></tr><tr><td>2026-04</td><td>¥66,479</td><td>10</td><td>¥6,648 <span class="md neg">▲102%</span></td><td>10.0%</td><td>1</td><td>¥66,479 <span class="md pos">▼59%</span></td><td>100.0%</td><td class="">0%</td></tr></tbody>
     </table>
 </div>
 
@@ -235,8 +235,8 @@ new Chart(document.getElementById('monthlySeatedCost'),{
     data:{
         labels:["2025-12", "2026-01", "2026-02", "2026-03", "2026-04"],
         datasets:[
-            {label:'着座数',data:[0, 1, 10, 4, 0],backgroundColor:'rgba(236,72,153,.45)',borderRadius:4,yAxisID:'y',order:2},
-            {label:'着座単価',data:[0, 316116, 57440, 162745, 0],type:'line',borderColor:'#f59e0b',borderWidth:2.5,pointRadius:5,pointBackgroundColor:'#f59e0b',yAxisID:'y1',order:1}
+            {label:'着座数',data:[0, 1, 10, 4, 1],backgroundColor:'rgba(236,72,153,.45)',borderRadius:4,yAxisID:'y',order:2},
+            {label:'着座単価',data:[0, 316116, 57440, 162745, 66479],type:'line',borderColor:'#f59e0b',borderWidth:2.5,pointRadius:5,pointBackgroundColor:'#f59e0b',yAxisID:'y1',order:1}
         ]
     },
     options:{responsive:true,interaction:{mode:'index',intersect:false},
@@ -253,9 +253,9 @@ new Chart(document.getElementById('monthlyFunnel'),{
     data:{
         labels:["2025-12", "2026-01", "2026-02", "2026-03", "2026-04"],
         datasets:[
-            {label:'着座率',data:[0.0, 7.7, 43.5, 18.2, 0],borderColor:'#ec4899',borderWidth:2.5,pointRadius:5,pointBackgroundColor:'#ec4899',tension:.3},
-            {label:'着座CVR',data:[0, 0.0, 10.0, 50.0, 0],borderColor:'#22c55e',borderWidth:2.5,pointRadius:5,pointBackgroundColor:'#22c55e',tension:.3},
-            {label:'LINE→商談率',data:[0.8, 6.3, 12.6, 11.1, 0.0],borderColor:'#8b5cf6',borderWidth:2.5,pointRadius:5,pointBackgroundColor:'#8b5cf6',tension:.3}
+            {label:'着座率',data:[0.0, 7.7, 43.5, 18.2, 100.0],borderColor:'#ec4899',borderWidth:2.5,pointRadius:5,pointBackgroundColor:'#ec4899',tension:.3},
+            {label:'着座CVR',data:[0, 0.0, 10.0, 50.0, 0.0],borderColor:'#22c55e',borderWidth:2.5,pointRadius:5,pointBackgroundColor:'#22c55e',tension:.3},
+            {label:'LINE→商談率',data:[0.8, 6.3, 12.6, 11.1, 10.0],borderColor:'#8b5cf6',borderWidth:2.5,pointRadius:5,pointBackgroundColor:'#8b5cf6',tension:.3}
         ]
     },
     options:{responsive:true,interaction:{mode:'index',intersect:false},
